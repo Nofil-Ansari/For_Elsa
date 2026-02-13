@@ -26,7 +26,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://github.com/Nofil-Ansari/For_Elsa/blob/main/index.html
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: 'https://nofil-ansari.github.io/For_Elsa/'
+          path: 'https://github.com/Nofil-Ansari/For_Elsa'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
